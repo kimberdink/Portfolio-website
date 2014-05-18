@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<title>Kimberdink</title>
+	
+<!--DO IT NEED THIS?? -->	
+	<meta name="description" content="Portfolio">
+	<meta name="author" content="">
+<!--DO IT NEED THIS?? -->	
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Alegreya+Sans:400,500italic|Imprima|Krona+One">
+
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>a
+	<![endif]-->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.min.js"></script>	
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+
+	
+	<script type="text/javascript">
+	$(function () {
+		var filterList = {
+			init: function () {
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixitup({
+					targetSelector: '.portfolio',
+					filterSelector: '.filter',
+					effects: ['fade'],
+					easing: 'snap',
+					// call the hover effect
+					onMixEnd: filterList.hoverEffect()
+				});				
+			},
+			hoverEffect: function () {
+				// Simple parallax effect
+				$('#portfoliolist .portfolio').hover(
+					function () {
+						$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+						$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+					},
+					function () {
+						$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+						$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+					}		
+				);				
+			}
+		};
+		// Run the show!
+		filterList.init();	
+	});	
+	</script>
+
+</head>
+<body>
+
+	<header>
+		<img src="images/kimberdink.png" alt="Kimberdink" width="228" height="91" />
+	</header>
+	<article>
+		<h2>
+		Hey there! I'm Kim...
+		</h2>
+			<p>
+			an active multi-disciplinary artist of the SF Bay Area 
+			<br> 
+			specializing in design and illustration.
+			</p>
+	</article>
+
+<!-- container -->
+	<div class="container">
+
+		
+<!-- portfolio -->
+		<div id="portfoliolist">
+			
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">				
+					<a href="http://www.kimberdink.com/project_details.html#kimberdink">
+					<img src="img/portfolios/web/4.jpg" alt="Kimberdink website" />
+					</a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Kimberdink</a>
+							<span class="text-category">Web</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">				
+					<img src="img/portfolios/logo/5.jpg" alt="You Are That Pig logo" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">You Are That Pig</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>				
+
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/web/2.jpg" alt="Fussy Toes website" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Fussy Toes</a>
+							<span class="text-category">Web</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+			
+			<div class="portfolio print" data-cat="print">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/print/3.jpg" alt="Sleep and Sound Business Card" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Sleep and Sound Business Card</a>
+							<span class="text-category">Print</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>		
+			
+			<div class="portfolio caricature" data-cat="caricature">
+				<div class="portfolio-wrapper">						
+					<img src="img/portfolios/caricature/1.jpg" alt="Bobby & Kara caricature" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Bobby & Kara</a>
+							<span class="text-category">Caricature</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>									
+			
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/logo/1.jpg" alt="All Worlds Fair logo" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">All Worlds Fair</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>				
+			
+			<div class="portfolio illustration" data-cat="illustration">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/illustration/1.jpg" alt="Sappho illustration" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Sappho</a>
+							<span class="text-category">Illustration</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+			
+			<div class="portfolio print" data-cat="print">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/print/4.jpg" alt="MPDG Larp Booklet" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">MPDG Larp Booklet</a>
+							<span class="text-category">Print</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+			
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/logo/2.jpg" alt="Holby South Logo" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Holby South</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+			
+			<div class="portfolio caricature" data-cat="caricature">
+				<div class="portfolio-wrapper">						
+					<img src="img/portfolios/caricature/2.jpg" alt="Laura & Brian" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Laura & Brian</a>
+							<span class="text-category">Caricature</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+						
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/logo/3.jpg" alt="Jade's Flowers logo" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Jade's Flowers</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>			
+			
+			<div class="portfolio print" data-cat="print">
+				<div class="portfolio-wrapper">						
+					<img src="img/portfolios/print/5.jpg" alt="All Worlds Fair Flyer" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">All Worlds Fair Flyer</a>
+							<span class="text-category">Print</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>		
+			
+			<div class="portfolio illustration" data-cat="illustration">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/illustration/5.jpg" alt="Fruit App Icon" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Fruit App Icon</a>
+							<span class="text-category">Illustration</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																																																						
+			
+			<div class="portfolio illustration" data-cat="illustration">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/illustration/2.jpg" alt="Alley illustration" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Alley</a>
+							<span class="text-category">Illustration</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/web/1.jpg" alt="All Worlds Fair website" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">All Worlds Fair</a>
+							<span class="text-category">Web</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>					
+
+			<div class="portfolio caricature" data-cat="caricature">
+				<div class="portfolio-wrapper">						
+					<img src="img/portfolios/caricature/3.jpg" alt="Bob & Adair caricature" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Bob & Adair</a>
+							<span class="text-category">Caricature</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																	
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/logo/7.jpg" alt="Fussy Toes logo" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Fussy Toes</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>													
+			
+			<div class="portfolio print" data-cat="print">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/print/2.jpg" alt="Fussy Toes 2013 Catalog" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Fussy Toes 2013 Catalog</a>
+							<span class="text-category">Print</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																											
+			
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/logo/4.jpg" alt="Manic Pixie Dream Girl LARP logo" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Manic Pixie Dream Girl LARP</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+			
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/logo/6.jpg" alt="Sleep and Sound logo" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Sleep and Sound</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																							
+
+			<div class="portfolio caricature" data-cat="caricature">
+				<div class="portfolio-wrapper">						
+					<img src="img/portfolios/caricature/4.jpg" alt="My family caricature" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">My family</a>
+							<span class="text-category">Caricature</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																																																																	
+
+			<div class="portfolio illustration" data-cat="illustration">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/illustration/4.jpg" alt="Icicle Bicycle illustration" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Icicle Bicycle</a>
+							<span class="text-category">Illustration</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>		
+			
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/web/3.jpg" alt="Holby South website" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Holby South</a>
+							<span class="text-category">Web</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																																																																	
+			
+			<div class="portfolio print" data-cat="print">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/print/1.jpg" alt="Countervail EP album cover" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Countervail Ep</a>
+							<span class="text-category">Print</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>		
+			
+			<div class="portfolio illustration" data-cat="illustration">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/illustration/3.jpg" alt="Character designs for Jennie" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Character Designs for Jennie</a>
+							<span class="text-category">Illustration</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+			
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">				
+					<a href="http://www.kimberdink.com/project_details.html#kimberdink">
+					<img src="img/portfolios/logo/8.jpg" alt="Kimberdink Logo" />
+					</a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Kimberdink</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>		
+											
+		</div>
+<!-- end portfolio -->	
+	
+	</div>
+<!-- end container -->
+			<footer>
+			<div class="promo_container">
+				
+					<div class="content">
+						<h3>Contact</h3>
+						<p>
+						Kim Anderson
+						<br>
+						1.408.561.1715 <br>
+<!--email-->						
+						kim_anderson_07@yahoo.com
+						</p>					
+						<p><a class="link" href="mailto:kim_anderson_07@yahoo.com">Drop me a line!</a></p>
+					</div>
+				
+			
+					<div class="content">
+						<h3>Elsewhere</h3>
+						<div class="social">
+							<a href="http://www.facebook.com/kimberdink" title="facebook">
+							<img src="images/facebook.png" alt="facebook" width="32" height="32"></a>
+							<a href="http://www.twitter.com/kimberdink" title="twitter">
+							<img src="images/twitter.png" alt="twitter" width="32" height="32"></a>
+							<a href="http://www.linkedin.com/pub/kim-anderson/54/703/364" title="linkedin">
+							<img src="images/linkedin.png" alt="linkedin" width="32" height="32"></a>
+							<a href="http://www.dribbble.com/kimberdink" title="dribbble">
+							<img src="images/dribbble.png" alt="dribbble" width="32" height="32"></a>
+							<a href="http://www.behance.com/kimberdink" titel="behance">
+							<img src="images/behance.png" alt="behance" width="32" height="32"></a>
+						</div>
+					</div>
+
+			
+					<div class="content">
+						<h3>News</h3>
+						<p>The latest in blog posts and current events!</p>
+						<p><a class="link" href="http://www.kimfolio.tumblr.com/">Visit my blog</a></p>
+					</div>
+				
+				<div class="clear-fix">
+				<hr>
+				<p>&copy Kim Anderson 2013</p>
+				</div>
+			</div>
+			</footer>
+			<nav>
+				<a href="http://www.kimberdink.com">Home</a>
+				<a href="http://www.kimberdink.com/projects.html">Projects</a>
+				<a href="http://www.kimberdink.com/about.html">About</a>
+				<a href="http://www.kimberdink.com/resume.html">Resume</a>
+			</nav>
+</body>
+</html>

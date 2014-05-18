@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<title>Kimberdink</title>
+	
+<!--DO IT NEED THIS?? -->	
+	<meta name="description" content="Portfolio">
+	<meta name="author" content="">
+<!--DO IT NEED THIS?? -->	
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Alegreya+Sans:400,500italic|Imprima|Krona+One">
+	
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>a
+	<![endif]-->
+	
+</head>
+<body>
+
+	<header>
+		<img src="images/kimberdink.png" alt="Kimberdink" width="228" height="91" />
+	</header>
+	<article>
+		<h1>About Me</h1>
+	</article>
+
+<!-- container -->
+	<div class="portrait">
+	<p>
+	<img src="images/portrait.png" alt="That's Me" />		
+<strong >Hello! My name is Kim Anderson.</strong> 
+<br><br> I am an active multi-disciplinary artist of the San Francisco Bay Area and recently received my BFA in Animation/illustration from San Jose State University. I am a designer, a painter, a pixel pusher, a curious cat, an animator, and a fan of TMI. Currently I specialize in graphic design and illustration, but I certainly have a hand in most artistic mediums and love it when I have the opportunity to cross-pollinate. As a designer, I quite fancy playing with color and pixel-perfection but I also enjoy dreaming up extraordinarily bizarre worlds and the characters that inhabit such a space — particularly the oddities and eccentricities that produce a caricature. When I'm not creating art I am exploring honest human interactions, eating spicy food, and playing games.
+<br><br><strong>Services</strong> 	
+		<div>Logo & Icon Design
+		<br>Corporate Branding
+		<br>Web Design & Development
+		<br>Print Production Collaterals
+		<br>Photo Manipulation & Editing
+		</div>
+		<div>Traditional Illustration
+		<br>Character Design
+		<br>Conceptual Artwork
+		<br>Storyboarding
+		<br>Motion Graphics & Animation	
+		</div>
+	</p>
+	</div>
+<!-- end container -->
+			<footer class="footer">
+			<div class="promo_container">
+				
+					<div class="content">
+						<h3>Contact</h3>
+						<p>
+						Kim Anderson
+						<br>
+						1.408.561.1715 <br>
+<!--email-->						
+						kim_anderson_07@yahoo.com
+						</p>					
+						<p><a class="link" href="mailto:kim_anderson_07@yahoo.com">Drop me a line!</a></p>
+					</div>
+				
+			
+					<div class="content">
+						<h3>Elsewhere</h3>
+						<div class="social">
+							<a href="http://www.facebook.com/kimberdink" title="facebook">
+							<img src="images/facebook.png" alt="facebook" width="32" height="32"></a>
+							<a href="http://www.twitter.com/kimberdink" title="twitter">
+							<img src="images/twitter.png" alt="twitter" width="32" height="32"></a>
+							<a href="http://www.linkedin.com/pub/kim-anderson/54/703/364" title="linkedin">
+							<img src="images/linkedin.png" alt="linkedin" width="32" height="32"></a>
+							<a href="http://www.dribbble.com/kimberdink" title="dribbble">
+							<img src="images/dribbble.png" alt="dribbble" width="32" height="32"></a>
+							<a href="http://www.behance.com/kimberdink" titel="behance">
+							<img src="images/behance.png" alt="behance" width="32" height="32"></a>
+						</div>
+					</div>
+
+			
+					<div class="content">
+						<h3>News</h3>
+						<p>The latest in blog posts and current events!</p>
+						<p><a class="link" href="http://www.kimfolio.tumblr.com/">Visit my blog</a></p>
+					</div>
+				
+				<div class="clear-fix">
+				<hr>
+				<p>&copy Kim Anderson 2013</p>
+				</div>
+			</div>
+			
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>	
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	
+	
+	<script type="text/javascript">
+	$(function () {
+		var filterList = {
+			init: function () {
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixitup({
+					targetSelector: '.portfolio',
+					filterSelector: '.filter',
+					effects: ['fade'],
+					easing: 'snap',
+					// call the hover effect
+					onMixEnd: filterList.hoverEffect()
+				});				
+			},
+			hoverEffect: function () {
+				// Simple parallax effect
+				$('#portfoliolist .portfolio').hover(
+					function () {
+						$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+						$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+					},
+					function () {
+						$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+						$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+					}		
+				);				
+			}
+		};
+		// Run the show!
+		filterList.init();	
+	});	
+	</script>
+			
+			
+			</footer>
+			<nav>
+				<a href="http://www.kimberdink.com">Home</a>
+				<a href="http://www.kimberdink.com/projects.html">Projects</a>
+				<a href="http://www.kimberdink.com/about.html">About</a>
+				<a href="http://www.kimberdink.com/resume.html">Resume</a>
+			</nav>
+</body>
+</html>

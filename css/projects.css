@@ -1,0 +1,57 @@
+
+
+	
+#portfoliodetails {
+	text-align: center;
+	}
+	#portfoliodetails img {
+		width: 60%;
+		padding-bottom: 50px;
+		}
+
+	.project-wrapper {
+		display: block;
+		}
+	.title {
+		font-family: 'Alegreya Sans', Open Sans;
+		padding: 0px;
+		margin: 0px;
+		font-size: 55px;
+		line-height: normal;
+		color: #041c34;
+		font-weight: normal;
+			}
+		}
+	.detail-label {
+		background: #979798;
+		padding: 30px;
+		text-align: left;
+		font-size: 30px;
+		}
+		.detail-label p {
+			color: #575c7a;
+			font-family: 'Alegreya Sans', Open Sans, sans-serif;
+			font-size: 22px;
+			line-height: 25px;
+			margin: 0px;
+			}
+			.detail-label ul {
+			color: #575c7a;
+			font-family: Open Sans, sans-serif;
+			font-size: 20px;
+			line-height: 20px;
+			padding: 0px;
+			margin: 0px;
+			}
+			.detail-label li {
+			display: inline;
+			color: #575c7a;
+			font-family: Open Sans, sans-serif;
+			font-size: 15px;
+			line-height: 15px;
+			padding-bottom: 40px;
+			}
+			.detail-label li span {
+			font-weight: bold;
+			
+			}
